@@ -19,7 +19,10 @@ export const metadata: MetadataType = {
   title: "Shine Hub",
   metadataBase: new URL("https://fesolutions.xyz"),
   icons: {
-    icon: [{ rel: "icon", url: "/unnamed.jpg" }],
+    icon: [
+      { rel: "icon", url: "/unnamed.jpg" },
+      { rel: "icon", url: "/favicon.ico" },
+    ],
   },
 };
 
