@@ -20,7 +20,6 @@ export const metadata: MetadataType = {
   metadataBase: new URL("https://fesolutions.xyz"),
   icons: {
     icon: [
-      { rel: "icon", url: "/unnamed.jpg" },
       { rel: "icon", url: "/favicon.ico" },
     ],
   },
