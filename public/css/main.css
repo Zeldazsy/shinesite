@@ -1,0 +1,98 @@
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background: 
+    radial-gradient(circle, rgba(173, 216, 230, 0.08) 1px, transparent 1px), /* ลายตารางจางๆ */
+    linear-gradient(135deg, #0b1116, #16202c); /* ฟ้าหม่นเข้ม */
+  background-size: 20px 20px, cover;
+  color: #e0f1ff; /* ฟ้าหม่นสว่าง */
+}
+
+/* Page container with spacing */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 30px;
+  gap: 40px;
+}
+
+/* Card design with soft glow */
+.card {
+  border-radius: 12px;
+  border: 1px solid rgba(160, 200, 220, 0.3);
+  backdrop-filter: blur(2px);
+  padding: 40px;
+  max-width: 750px;
+  width: 90%;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 18px rgba(0, 0, 0, 0.4);
+}
+
+/* Title with a subtle glow */
+.title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #a0d2eb; /* ฟ้าจาง */
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Description text */
+.description {
+  text-align: center;
+  color: #b0c7d4; /* เทาฟ้าหม่น */
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* Button with smooth hover effects */
+.btn {
+  padding: 15px 36px;
+  border: 1px solid #6faedb; /* ขอบสีฟ้าหม่น */
+  color: #c7e4f7; /* ฟ้าสว่าง */
+  background-color: transparent;
+  border-radius: 999px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background-color: #3a5f77; /* ฟ้านุ่มๆ */
+  border-color: #3a5f77;
+}
+
+/* Footer */
+.footer {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 14px;
+  color: #a1b7c5; /* เทาฟ้าหม่น */
+}
+
+/* Discord link */
+.discord-link {
+  color: #6faedb;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.discord-link:hover {
+  color: #89bedb; /* ฟ้าจางลง */
+}

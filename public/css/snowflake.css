@@ -1,0 +1,20 @@
+.snowflake {
+    position: fixed;
+    top: -10px;
+    color: white;
+    font-size: 1em;
+    user-select: none;
+    animation: snowfall linear infinite;
+  }
+  
+  /* Keyframes for falling snowflakes */
+  @keyframes snowfall {
+    0% {
+      transform: translateY(0) translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) translateX(20px);
+      opacity: 0;
+    }
+  }
