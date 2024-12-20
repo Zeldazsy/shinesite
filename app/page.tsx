@@ -17,8 +17,8 @@ export default function Home() {
         <h1 className="title">Shine Hub</h1>
 
         <p className="description">
-          <strong>"Lorem ipsum"</strong> dolor sit amet, consectetur adipiscing elit.
-        </p>
+  <strong>&ldquo;Lorem ipsum&rdquo;</strong> dolor sit amet, consectetur adipiscing elit.
+</p>
 
         <hr />
 
