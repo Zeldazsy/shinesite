@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   },
   icons: {
     shortcut: "/ico.jpg",
+    icon: "/ico.jpg",
   },
 };
 
