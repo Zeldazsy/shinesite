@@ -2,7 +2,7 @@ import '../css/snowflake.css'
 function createSnowflake() {
     const snowflake = document.createElement("div");
     snowflake.classList.add("snowflake");
-    snowflake.innerHTML = "❄"; // Snowflake symbol
+    snowflake.innerHTML = "*"; // Snowflake symbol
   
     // Randomize snowflake properties
     snowflake.style.left = Math.random() * window.innerWidth + "px";

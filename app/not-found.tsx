@@ -23,7 +23,6 @@ export default function NotFound() {
           </p>
         </div>
       </div>
-
     </>
   );
 }

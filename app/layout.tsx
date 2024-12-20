@@ -2,6 +2,7 @@ import type { Metadata as MetadataType } from "next";
 import { Inter, Roboto_Mono } from "next/font/google";
 import ClientLoader from "./ClientLoader";
 import SnowfallLoader from "./SnowfallLoader";
+import "./globals.css";
 
 // Define font styles
 const inter = Inter({
@@ -19,11 +20,11 @@ export const metadata: MetadataType = {
   title: "Shine Hub",
   metadataBase: new URL("https://fesolutions.xyz"),
   icons: {
-    icon: [
-      { rel: "icon", url: "/favicon.ico" },
-    ],
+    icon: "/favicon.ico",
   },
 };
+
+
 
 
 // Root layout component
@@ -38,8 +39,7 @@ export default function RootLayout({
         className={`${inter.variable} ${robotoMono.variable} antialiased`}
       >
         <ClientLoader>{children}</ClientLoader>
-        <SnowfallLoader /> {/* Load the snowfall effect */}
-
+        <SnowfallLoader />
       </body>
     </html>
   );
