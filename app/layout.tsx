@@ -1,8 +1,20 @@
-import type { Metadata as MetadataType } from "next";
+import { Metadata } from "next";
 import { Inter, Roboto_Mono } from "next/font/google";
 import ClientLoader from "./ClientLoader";
 import SnowfallLoader from "./SnowfallLoader";
 import "./globals.css";
+
+// Metadata export (server-side)
+export const metadata: Metadata = {
+  title: {
+    default: "Zelda",
+    template: "%s | zalda.xyz",
+  },
+  icons: {
+    shortcut: "/ico.jpg",
+  },
+};
+
 
 // Define font styles
 const inter = Inter({
@@ -14,17 +26,6 @@ const robotoMono = Roboto_Mono({
   variable: "--font-roboto-mono",
   subsets: ["latin"],
 });
-
-// Metadata object for the app
-export const metadata: MetadataType = {
-  title: "Shine Hub",
-  metadataBase: new URL("https://fesolutions.xyz"),
-  icons: {
-    icon: "/favicon.ico",
-  },
-};
-
-
 
 
 // Root layout component
