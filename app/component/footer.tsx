@@ -8,14 +8,13 @@ export default function Footer() {
         <span className={styles.logoText}>Merry Christmas</span>
       </div>
       <div className={styles.footerLinks}>
-
         <Link href="/privacy-policy" className={styles.footerLink}>
           Privacy Policy
         </Link>
       </div>
       <div className={styles.footerText}>
         © 2024 Shine Hub. All Rights Reserved. Unauthorized copying or reproduction
-        of this website's content, code, or assets is strictly prohibited.
+        of this website&apos;s content, code, or assets is strictly prohibited.
       </div>
     </div>
   );
