@@ -1,0 +1,131 @@
+.container {
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically */
+    height: 60vh; /* Ensure it takes full viewport height */
+  }
+
+  
+  /* Header Section */
+  .aboutHeader {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.375rem 1rem;
+    border-radius: 9999px;
+    background: linear-gradient(to right, rgba(0, 216, 214, 0.1), rgba(0, 124, 240, 0.1), rgba(75, 0, 255, 0.1));
+    margin-bottom: 1rem;
+  }
+  
+  .badge svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #007cf0;
+  }
+  
+  .badgeText {
+    font-size: 0.875rem;
+    font-weight: 500;
+    background: linear-gradient(to right, #74a9f3, #007cf0, #00d8d6);
+    background-clip: text;
+    color: transparent;
+    backdrop-filter: blur(2px); /* Apply blur */
+  }
+  
+  .title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #007cf0;
+  }
+  
+  .title span {
+    background: linear-gradient(to right, #74a9f3, #007cf0, #00d8d6);
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .aboutDescription {
+    font-size: 1.25rem;
+    color: #d1d5db;
+    line-height: 1.8; /* Increased line height */
+    max-width: 800px; /* Limit the width to avoid long lines */
+    margin: 0 auto; /* Center the text */
+    padding: 0 1rem; /* Add padding to the sides */
+    text-align: justify; /* Align text for better readability */
+  }
+  
+  
+/* Parent container should have flexbox to center the statCard */
+.stats {
+    display: flex;
+    justify-content: center; /* Center the statCard horizontally */
+    align-items: center; /* Center the statCard vertically */
+    gap: 1rem; /* Adjust the gap between cards */
+    flex-wrap: wrap; /* Allow items to wrap if needed */
+    margin-top: 2rem;
+  }
+  
+  /* The statCard itself */
+  .statCard {
+    display: flex; /* Use flexbox inside the statCard for centering content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    max-width: 30rem; /* Set max-width */
+    border-radius: 20px; /* Rounded corners */
+    border: 1px solid rgba(160, 200, 220, 0.3); /* Border color */
+    position: relative;
+    background-color: transparent; /* Transparent background */
+    padding: 14px 35px; /* Adjust padding */
+    backdrop-filter: blur(1.2px); /* Apply blur */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  }
+  
+  
+  
+  /* Hover Effects for Stat Cards */
+  .statCard:hover {
+    transform: translateY(-2px); /* ลดความสูงในการยก */
+    box-shadow: 0 4px 8px rgba(0, 124, 240, 0.2); /* เพิ่มเงาเล็กน้อย */
+  }
+  
+  .gradientOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0, 124, 240, 0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .statCard:hover .gradientOverlay {
+    opacity: 1;
+  }
+  
+  .statValue {
+    font-size: 1.5rem; /* ลดขนาดตัวเลข */
+    font-weight: 600; /* ปรับน้ำหนักตัวอักษร */
+    background: linear-gradient(to right, #00d8d6, #007cf0, #5900ff);
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 0.25rem;
+  }
+  
+  .statDescription {
+    font-size: 0.75rem; /* ลดขนาดข้อความ */
+    color: #e2e8f0;
+    letter-spacing: 0.5px;
+  }
+  
+  /* สำหรับขนาดหน้าจอที่ใหญ่ขึ้น */
+  @media (min-width: 768px) {
+    .stats {
+      grid-template-columns: repeat(2, 1fr); /* คงไว้เป็น 2 คอลัมน์ */
+    }
+  }
+  

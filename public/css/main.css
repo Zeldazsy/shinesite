@@ -78,6 +78,7 @@ body {
   letter-spacing: 1.2px;
   transition: all 0.4s ease;
   text-decoration: none;
+  backdrop-filter: blur(1.1px);
 }
 
 .btn:hover {

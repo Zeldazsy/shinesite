@@ -1,0 +1,54 @@
+/* FlowSection.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    height: 100vh; /* Ensure it takes full viewport height */
+    text-align: center; /* Center the text horizontally */
+    gap: 2rem;
+    transform: none;
+  }
+  
+  .title {
+    font-size: 6rem;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(to right, #5900ff, #1D4ED8, #00B5E2);
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .description {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #e5e7eb;
+    max-width: 50rem;
+    margin: 0 auto;
+    font-weight: 300;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 14px 35px;
+    background-image: linear-gradient(to right, #5900ff, #1D4ED8, #00B5E2);
+    color: #c7e4f7;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    transition: all 0.4s ease;
+    text-decoration: none;
+}
+
+.btn:hover {
+    color: #ffffff;
+    backdrop-filter: blur(1.1px);
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(to right, #00B5E2, #1D4ED8, #5900ff);
+}

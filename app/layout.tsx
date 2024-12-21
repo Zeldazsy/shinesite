@@ -10,11 +10,8 @@ export const metadata: Metadata = {
     default: "Zelda",
     template: "%s | zalda.xyz",
   },
-  icons: {
-    shortcut: "/ico.jpg",
-    icon: "/ico.jpg",
-  },
 };
+
 
 
 // Define font styles

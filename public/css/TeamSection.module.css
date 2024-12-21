@@ -1,0 +1,104 @@
+.container {
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically */
+    height: 100vh; /* Ensure it takes full viewport height */
+    text-align: center; /* Center the text horizontally */
+    gap: 2rem;
+    opacity: 1;
+    transform: none;
+  }
+
+.teamSection {
+    padding: 6rem 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .teamHeader {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .teamHeaderBadge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(to right, rgba(12, 74, 110, 0.1), rgba(0, 122, 255, 0.1));
+    border-radius: 9999px;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #00aaff;
+  }
+  
+  .teamHeader h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  .teamHighlight {
+    background: linear-gradient(to right, #004aad, #00aaff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .teamDescription {
+    color: #a0a0a0;
+    font-size: 1.125rem;
+    margin-top: 1rem;
+  }
+  
+  .teamGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .teamMember {
+    background: rgba(30, 30, 30, 0.8);
+    border: 1px solid rgba(80, 80, 80, 0.5);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .teamMember:hover {
+    border-color: #00aaff;
+    box-shadow: 0 10px 20px rgba(0, 122, 255, 0.2);
+    transform: scale(1.02);
+  }
+  
+  .teamMemberImage {
+    width: 112px;
+    height: 112px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid rgba(0, 122, 255, 0.2);
+  }
+  
+  .teamMemberName {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .teamMemberRole {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #00aaff;
+  }
+  
+  .teamMemberDescription {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color: #a0a0a0;
+    line-height: 1.4;
+  }
+  

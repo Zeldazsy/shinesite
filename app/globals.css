@@ -1,19 +1,34 @@
-  
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #231c33; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #595666; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #312f4e; 
-  }
+body {
+  font-family: "Prompt", sans-serif;
+  position: absolute;
+  inset: 0;
+  background-color: #0f0f0f;  /* ตั้งพื้นหลังเป็นสีดำ */
+  background-image: 
+    linear-gradient(135deg, #0f0f0f, #16202c), /* First gradient */
+    linear-gradient(to right, #ffffff 1px, transparent 1px), /* เส้นแนวนอน */
+    linear-gradient(to bottom, #ffffff 1px, transparent 1px); /* เส้นแนวตั้ง */
+  background-size: 4rem 4rem;  /* ขนาดของเส้น */
+  background-blend-mode: normal;  /* ผสมสีให้เส้นชัดเจน */
+  padding: 0.5rem; /* For small screens */
+}
+
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #231c33; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #595666; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #312f4e; 
+}
