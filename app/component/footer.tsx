@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import styles from '/public/css/Footer.module.css'; // Correctly import the module CSS
 
